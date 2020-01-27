@@ -17,7 +17,6 @@ node {
    stage('Patch and Send the OVA to vSphere') {
               ansiblePlaybook(
                 colorized: true, 
-                inventory: 'hosts.ini', 
                 playbook: 'gitlab_addNewVE.yaml', 
                 limit: 'me',
                 extras: '-vvv',

@@ -1,6 +1,7 @@
 ---
 - name: Patch a new F5 VE OVA with F5 vApp custom Properties and Migrate it as a vCenter Template
   hosts: me
+  connection:local
   gather_facts: false
 
   pre_tasks:

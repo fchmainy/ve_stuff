@@ -18,6 +18,7 @@ node {
               ansiblePlaybook(
                 colorized: true, 
                 playbook: 'gitlab_addNewVE.yaml', 
+                inventory: 'hosts.ini', 
                 limit: 'me',
                 extras: '-vvv',
                 sudoUser: null,
